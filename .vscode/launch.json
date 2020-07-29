@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "bolum3/exception.dart",
+            "program": "Dart_Basic/NYP/getset.dart",
             "request": "launch",
             "type": "dart"
         }
