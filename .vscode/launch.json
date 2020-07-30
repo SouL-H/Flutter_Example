@@ -4,7 +4,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "Dart_Basic/NYP/getset.dart",
+            "program": "Dart_Basic/Kalitim/kurucu.dart",
             "request": "launch",
             "type": "dart"
         }
