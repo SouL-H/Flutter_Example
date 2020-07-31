@@ -4,7 +4,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "Dart_Basic/Kalitim/kurucu.dart",
+            "program": "Dart_Basic/Bolum5/LexicalClosure.dart",
             "request": "launch",
             "type": "dart"
         }
