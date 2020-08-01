@@ -9,11 +9,15 @@ main(List<String> args) {
   print("Program bitti");
 }
 
-dosyaGoster() {
+dosyaGoster() async {
   print("Dosya içeriği için bekle");
-  var dosyaicerigi = dosyaDownload();
+  String dosyaicerigi = await dosyaDownload();
   print("Dosya içeriği : $dosyaicerigi");
 }
+
+//Düzeltilmeden önce ekran çıktısında Dosya içeriği : Instance of 'Future<String>'
+//Bu şekilde yazmaktadır.Çünkü 10 sn beklemesi lazım fakat içerik okunmadığı için normal bilgi yazıyor.
+//Bu durumu düzeltmek için async metotu ve fonksiyon önünde await eklediğimizde artık bittikten sonra o fonksiyon devrede oluyor.
 
 Future<String> dosyaDownload() {
   print("İndiriliyor...");
