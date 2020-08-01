@@ -10,7 +10,7 @@ main(List<String> args) {
   k2.mesaj();
 }
 
-// Abstact sınıflardan nesne üretilmez.abstract
+// Abstact sınıflardan nesne üretilmez.
 // var isim = new Sekil(); gibi nesneler üretilmez.
 //Gövdesi olmayan sadece tanımı olan metotlara denir.
 abstract class Sekil {
