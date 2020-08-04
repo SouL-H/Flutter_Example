@@ -140,8 +140,52 @@ void main() {
                   ],
                 ),
               ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 30),
+                //Buton uzunluklarıı ayarlamış olduk ve container ile ek özellikler kazandırdık column'a.
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  //Butonları ekrana sığar dereceye getirir.
+                  children: <Widget>[
+                    RaisedButton(
+                      child: Text("Button"),
+                      color: Colors.orange,
+                      onPressed: () => debugPrint("turuncu buton"),
+                    ),
+                    RaisedButton(
+                      child: Text("Button"),
+                      elevation: 13,
+                      color: Colors.purple,
+                      onPressed: () => debugPrint("Mor buton"),
+                    ),
+                    RaisedButton(
+                      child: Text("Button"),
+                      elevation: 12,
+                      color: Colors.red,
+                      onPressed: yazdir,
+                    ),
+                    IconButton(
+                      icon: Icon(
+                        Icons.launch,
+                        size: 19,
+                      ),
+                      onPressed: () {},
+                    ),
+                    //Icon butonu
+                    FlatButton(
+                      onPressed: () {},
+                      child: Text("Selam"),
+                    )
+                    //Yazı butonu
+                  ],
+                ),
+              ),
             ],
           )),
     ),
   );
+}
+
+void yazdir() {
+  debugPrint("Kırmızı fonksiyon buton");
 }
